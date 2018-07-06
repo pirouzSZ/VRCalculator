@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VRCalculator.Home" xmlns:local="clr-namespace:VRCalculator" BackgroundColor="#354242" NavigationPage.HasNavigationBar="False">
+    <Grid Padding="40" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Text="" x:Name="Display" FontSize="50" TextColor="White" Grid.Row="1" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+        <Button Text="1" Clicked="Handle_Clicked1" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="2" Grid.Column="0">
+        </Button>
+        <Button Text="2" Clicked="Handle_Clicked2" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="2" Grid.Column="1">
+        </Button>
+        <Button Text="3" Clicked="Handle_Clicked3" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="2" Grid.Column="2">
+        </Button>
+        <Button Text="4" Clicked="Handle_Clicked4" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="3" Grid.Column="0">
+        </Button>
+        <Button Text="5" Clicked="Handle_Clicked5" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="3" Grid.Column="1">
+        </Button>
+        <Button Text="6" Clicked="Handle_Clicked6" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="3" Grid.Column="2">
+        </Button>
+        <Button Text="7" Clicked="Handle_Clicked7" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="4" Grid.Column="0">
+        </Button>
+        <Button Text="8" Clicked="Handle_Clicked8" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="4" Grid.Column="1">
+        </Button>
+        <Button Text="9" Clicked="Handle_Clicked9" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="4" Grid.Column="2">
+        </Button>
+        <Button Text="0" Clicked="Handle_Clicked0" TextColor="#28282c" FontSize="30" BackgroundColor="#fff" BorderRadius="30" Grid.Row="5" Grid.Column="1">
+        </Button>
+        <Button Clicked="OnStart" x:Name="ButtonStart" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="5" Grid.Column="0" Image="mic2">
+        </Button>
+        <Button Clicked="OnStop" x:Name="ButtonStop" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="5" Grid.Column="2" Image="Hands-02-512.png">
+        </Button>
+        <Button Text="/" Clicked="Handle_Clicked_divide" TextColor="#28282c" FontSize="30" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="6" Grid.Column="1">
+        </Button>
+        <Button Text="*" Clicked="Handle_Clicked_times" TextColor="#28282c" FontSize="60" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="6" Grid.Column="0">
+        </Button>
+        <Button Text="CE" Clicked="Handle_Clicked" TextColor="#28282c" FontSize="30" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="6" Grid.Column="2">
+        </Button>
+        <Button Text="+" Clicked="Handle_Clicked_plus" TextColor="#28282c" FontSize="30" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="7" Grid.Column="0">
+        </Button>
+        <Button Text="-" Clicked="Handle_Clicked_minus" TextColor="#28282c" FontSize="30" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="7" Grid.Column="1">
+        </Button>
+        <Button Text="=" Clicked="Handle_Clicked_equal" TextColor="#28282c" FontSize="30" BackgroundColor="#96ca2d" BorderRadius="30" Grid.Row="7" Grid.Column="2">
+        </Button>
+    </Grid>
+</ContentPage>
